@@ -101,6 +101,8 @@ h1 .b{color:transparent;-webkit-text-stroke:1px var(--royal);font-style:italic}
 .card:before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--royal);transition:.5s}
 .card:hover{transform:translateY(-8px);border-color:var(--royal);box-shadow:0 24px 60px rgba(65,105,225,.2)}
 .card:hover:before{width:100%}
+.card.f{grid-column:1/-1;border-color:var(--royal);background:linear-gradient(120deg,rgba(65,105,225,.16),rgba(255,255,255,0))}
+.card.f p{max-width:860px;font-size:1rem}
 .card .n{font-family:'Cormorant Garamond',serif;font-size:3.4rem;color:rgba(65,105,225,.5);line-height:1}
 .card h3{font-size:1.75rem;margin:14px 0 12px}
 .card p{color:var(--mute);font-size:.92rem;margin-bottom:20px}
@@ -209,6 +211,7 @@ footer b{color:var(--royal);font-weight:500}
   <div class="eyebrow r">Selected Work</div>
   <h2 class="r">Projects that <em>perform</em>.</h2>
   <div class="grid">
+    <div class="card f r"><div class="n">◆</div><div class="t" style="margin-top:10px">Featured capstone · In progress · Fall 2026</div><h3>Wind Energy Profiler Exception Classifier Library</h3><p>Industry capstone with Vaisala: a layered library of machine-learning classifiers that identifies, explains and prioritizes data-quality and availability exceptions across a fleet of 1,000+ wind-energy lidar profilers. Classifiers are organized from global (fleet-wide) down to regional, device-type and single-asset layers, so the most general model that works is always preferred. Working as a team, we first build one shared, cleaned and labeled lidar dataset with a common reserved test set, then develop competing classifier strategies evaluated head-to-head. Models are trained directly on GPU in a Linux environment.</p><div class="t">Python · GPU / Linux · Time-Series &amp; Anomaly Detection · Class Imbalance · Interpretable ML · Git</div></div>
     <div class="card r"><div class="n">01</div><h3>FlightWatch</h3><p>End-to-end ML platform for airfare forecasting and price-drop alerts, deployed on GCP with scheduled retraining.</p><div class="t">Python · FastAPI · Firestore · GCP</div></div>
     <div class="card r"><div class="n">02</div><h3>TB/HIV Mortality Analysis</h3><p>Compared GLMs, Kaplan-Meier, Cox PH, Random Forest and XGBoost on 400+ patient records; Cox PH gave the best fit.</p><div class="t">R · Survival Analysis · Biostatistics</div></div>
     <div class="card r"><div class="n">03</div><h3>Claim Frequency &amp; Severity</h3><p>Predictive modeling of insurance claim frequency and severity from patient-level claims data.</p><div class="t">Python · GLMs · Gradient Boosting</div></div>
@@ -224,7 +227,7 @@ footer b{color:var(--royal);font-weight:500}
   <div class="skills r">
     <div><h3>Languages</h3><ul><li>Python</li><li>R</li><li>SQL</li><li>C++</li><li>VBA</li></ul></div>
     <div><h3>Methods</h3><ul><li>Causal machine learning</li><li>Survival analysis</li><li>Time-series (ARIMA)</li><li>GLMs · XGBoost · Random Forest</li></ul></div>
-    <div><h3>Platforms</h3><ul><li>GCP: BigQuery, Firestore, Cloud Storage</li><li>Power BI · Tableau · Looker Studio</li><li>Advanced Excel · MS Dynamics 365</li></ul></div>
+    <div><h3>Platforms</h3><ul><li>GCP: BigQuery, Firestore, Cloud Storage</li><li>Power BI · Tableau · Looker Studio</li><li>Advanced Excel · MS Dynamics 365</li><li>Linux · GPU computing with Python</li></ul></div>
   </div>
 </div></section>
 
